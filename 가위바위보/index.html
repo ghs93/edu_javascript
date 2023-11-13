@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+
+        .title .content {
+            width: 200px;
+            margin-top: 10px;
+        }
+
+        .chooser {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>가위바위보 게임</h1>
+    </div>
+
+    <div>
+        <img src="img/rock.png" id="my_img">
+        <img src="img/rock.png" id="you_img">
+    </div>
+
+    <div class="title">
+        <div class="content"><strong>나</strong></div> 
+        <div class="content"><strong>상대</strong></div>
+    </div>
+
+    <div class="chooser">
+        <input type="radio" id="scissor" name="game" value="1">
+        <label for="scissor">가위</label>
+        <input type="radio" id="rock" name="game" value="2">
+        <label for="rock">바위</label>
+        <input type="radio" id="paper" name="game" value="3">
+        <label for="paper">보</label>
+
+        <button id="start">시작</button>
+    </div>
+
+    <div>
+        <h1 id="result"></h1>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
