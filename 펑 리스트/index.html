@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Manager</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="tt">pung list</h1>
+        <input type="text" id="name">
+        <span id="btn-make">
+            <button value="5">5초</button>
+            <button value="10">10초</button>
+            <button value="20">20초</button>
+        </span>
+
+        <div id="summary">
+            <p>총: <span id="total-items">0</span>건 평균 남은시간: <span id="avg-time">0.0</span>초</p>
+        </div>
+
+        <span id="btn-option">
+            <button name="btn-reset">초기화</button>
+            <button name="btn-double">x2</button>
+            <button name="btn-all-add">전체+5</button>
+            <button name="btn-all-stop">전체 중지</button>
+            <button name="btn-all-start">전체 시작</button>
+        </span>
+
+        <ul id="pung-list">
+            
+        </ul>
+    </div>
+
+    <script src="pung.js"></script>
+</body>
+</html>
