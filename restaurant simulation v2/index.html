@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 0px
+        }
+
+        .rowdiv {
+            display: flex;
+        }
+
+        .half {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="rowdiv">
+        <div class="half">
+            <h1>식당 시뮬레이션</h1>
+
+            <div class="orderBtn">
+                <button name="sundae">순댓국</button>
+                <button name="heajang">해장국</button>
+            </div>
+        
+            <div>
+                <h2>주문</h2>
+                <ul class="orderList">
+                </ul>
+            </div>
+        
+            <h2>요리</h2>
+            <div>
+                <div class="rowdiv">
+                    <p>장금이</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <div name="cookList">대기중</div>
+                </div>
+                <div class="rowdiv">
+                    <p>백주부</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <div name="cookList">대기중</div>
+                </div>
+            </div>
+        
+            <h2>서빙</h2>
+            <div>
+                <div class="rowdiv">
+                    <p>1초 서버</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <div name="serverList">대기중</div>
+                </div>
+                <div class="rowdiv">
+                    <p>2초 서버</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <div name="serverList">대기중</div>
+                </div>
+            </div>
+        </div>
+        <div class="half">
+            <h2>서빙 결과</h2>
+            <ul class="resultList">
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- <script type="module" src="./src/index.js"></script> -->
+    <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
