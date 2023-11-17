@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sticker {
+            position: absolute; 
+            width: 300px; 
+            background-color: red;
+            padding: 0px 10px;
+        }
+
+        .sticker > div {
+            display: flex;
+        }
+
+        .sticker > .content-list {
+            display: block;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            background-color: azure;
+            margin: 5px 0px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn-make-sticker">스티커 만들기</button>
+
+    <!-- <div class="sticker">
+        <p>스티커1</p>
+        <div>
+            <button>항목추가</button>
+            <button>스티커삭제</button>
+        </div>
+        <div class="content-list" >
+            <div class="content">
+                <p>sample input 1</p>
+                <button>삭제</button>
+            </div>
+            <div class="content">
+                <p>sample input 1</p>
+                <button>삭제</button>
+            </div>
+            <div class="content">
+                <p>sample input 1</p>
+                <button>삭제</button>
+            </div>
+        </div>
+    </div> -->
+    <script type="module" src="drag_and_drop.js"></script>
+</body>
+</html>
