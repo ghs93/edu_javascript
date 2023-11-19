@@ -31,8 +31,13 @@ export function makeDragable(sticker) {
     $createContent.onclick = (event) => {
         const content = new Content(contentNumber());
         const $content = content.getElemContent();
-        $content.onmousedown = (event) => {
-            onContentDrag(event, $content);
+        $content.onmousedown = (e) => {
+            if (e.target instanceof HTMLButtonElement) {
+                e.target.click();
+                return;
+            }
+
+            onContentDrag(e, $content);
         };
 
         $contentList.append($content);

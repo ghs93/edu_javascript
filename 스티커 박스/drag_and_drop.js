@@ -27,7 +27,6 @@ let getPosition = makePosition();
 
 document.getElementById("btn-make-sticker").onclick = (event) => {
     let position = getPosition();
-
     let sticker = new Sticker({
         title: getTitle(),
         top: position.top,
